@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>Thailand Innovation Bazaar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<link rel="icon" type="image/png" href="img/logo_inno.jpg"/>
+
+<!--
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
+header{ background: url(img/banner/banner.jpg);
+        background-size:100% ; } 
+
+body{ background: #F5F5F5;
+        background-size:100% ; } 
+</style>
+
+
+<!--Slideshow Indicators-->
+<style>
+.mySlides {display:none}
+.demo {cursor:pointer}
+</style>
+
+
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<!--
+<header class="w3-container w3-theme w3-padding" id="myHeader" style="max-height: 38px;">-->
+  <!--<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> --> <!--
+  <div class="w3-center">
+  <h4>zsdvczsdvsdv</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom"></h1>
+    <div class="w3-padding-32">
+      <br>
+      <br><br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+</header>
+-->
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<img src="img/banner/banner.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; ">
+</div>
+
+<hr>
+<br>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter" onclick="myFunction('Agenda')">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-calendar w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          
+        </div>
+        <div class="w3-clear"></div>
+        
+        <p class="w3-red w3-left-align"><h4>Agenda</h4></p>
+          <div id="Agenda" class="w3-hide w3-container">
+            <a href="#"><p>Some text..</p></a>
+            <a href="#"><p>Some text..</p></a>
+          </div>
+
+      </div>
+    </div>
+    <div class="w3-quarter" onclick="myFunction('poster')">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-trophy w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <p class=" w3-blue w3-left-align">
+        <h4>Poster & Presentation </h4> </p>
+          <div id="poster" class="w3-hide w3-container">
+            <a href="#"><p>Some text..</p></a>
+            <a href="#"><p>Some text..</p></a>
+          </div>
+
+      </div>
+    </div>
+    <div class="w3-quarter" onclick="myFunction('Booth')">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <p class=" w3-teal w3-left-align"><h4>Exhibition Booth</h4></p>
+          <div id="Booth" class="w3-hide w3-container">
+            <a href="#"><p>Some text..</p></a>
+            <a href="#"><p>Some text..</p></a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" onclick="myFunction('Activiy')" >
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-gamepad w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <p class="w3-orange w3-text-white w3-left-align">
+        <h4>Creative Activiy</h4></p>
+          <div id="Activiy" class="w3-hide w3-container">
+            <a href="#"><p>Some text..</p></a>
+            <a href="#"><p>Some text..</p></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Register</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><a href="#"><i class="fa fa-sign-in w3-text-green w3-large"></i></a></a></td>
+            <td><a href="https://docs.google.com/forms/d/1XY-DGZFs3xN3XE_mS1kuQ6hmVrEFXT6UAwlFV2OoJmo/viewform?edit_requested=true">Join Exhibition</a></a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-bell w3-text-red w3-large"></i></a></td>
+            <td><a href="#">Ice cream stick bridge</a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-car w3-text-yellow w3-large"></i></a></td>
+            <td><a href="#">A-F Car racing</a></td>
+            <td><i></i></td>
+          </tr>
+        </table>
+
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Online Submission</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><a href="#"><i class="fa fa-music w3-text-red w3-large"></i></a></td>
+            <td><a href="#">The mask singer</a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-camera w3-text-blue w3-large"></i></a></td>
+            <td><a href="#">Drone selfile</a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-gamepad w3-text-red w3-large"></i></a></td>
+            <td><a href="#">Game online</a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-question-circle w3-text-deep-purple w3-large"></i></a></td>
+            <td><a href="#">Q-A online</a></td>
+            <td><i></i></td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa fa-star w3-text-orange w3-large"></i></a></td>
+            <td><a href="#">Lucky draw</a></td>
+            <td><i></i></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="w3-twothird">
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Visitor Information</h5>
+
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-phone fa-th-large fa-fw w3-margin-right"></i>Contact Us</button>
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <p>Some text. Some text. Some text.</p>
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="w3-container ">
+        <p class="  w3-left-align"><i class="fa fa-map-marker fa-th-large fa-fw w3-margin-right"></i> Map</p>
+
+        <!-- Slideshow Indicators -->
+        <div class="w3-content" style="max-width:1200px">
+          <img class="mySlides" src="img/1.png" style="width:100%">
+          <img class="mySlides" src="img/2.png" style="width:100%">
+          <img class="mySlides" src="img/3.png" style="width:100%">
+
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="img/1.png" style="width:100%" onclick="currentDiv(1)">
+            </div>
+            <div class="w3-col s4">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="img/2.png" style="width:100%" onclick="currentDiv(2)">
+            </div>
+            <div class="w3-col s4">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="img/3.png" style="width:100%" onclick="currentDiv(3)">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-gray w3-padding-16">
+  <h3>Footer</h3>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+
+
+        <!-- Slideshow Indicators -->
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-opacity-off";
+        }
+        </script>
+
+
+
+<script type="text/javascript">
+
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+</script>
+
+</body>
+</html>
