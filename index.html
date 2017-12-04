@@ -14,7 +14,7 @@
 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
-header{ background: url(img/banner/banner.jpg);
+header{ background: url(img/contact_.jpg);
         background-size:100% ; } 
 
 body{ background: #F5F5F5;
@@ -57,61 +57,83 @@ body{ background: #F5F5F5;
 -->
 
 <div class="w3-row-padding w3-center w3-margin-top">
-<img src="img/banner/banner.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; ">
+<img src="img/banner/banner.jpg" style="width:100%; height: 100%; ">
 </div>
 
 <hr>
-<br>
 
   <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter" onclick="myFunction('Agenda')">
-      <div class="w3-container w3-red w3-padding-16">
+
+    <div class="w3-quarter " >
+      <div class="w3-container w3-red w3-padding-16 w3-block" onclick="document.getElementById('Agenda').style.display='block'">
         <div class="w3-left"><i class="fa fa-calendar w3-xxxlarge"></i></div>
         <div class="w3-right">
           
         </div>
         <div class="w3-clear"></div>
-        
         <p class="w3-red w3-left-align"><h4>Agenda</h4></p>
-          <div id="Agenda" class="w3-hide w3-container">
-            <a href="#"><p>Some text..</p></a>
-            <a href="#"><p>Some text..</p></a>
-          </div>
-
       </div>
     </div>
-    <div class="w3-quarter" onclick="myFunction('poster')">
-      <div class="w3-container w3-blue w3-padding-16">
+
+          <div id="Agenda" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+                <span onclick="document.getElementById('Agenda').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
+                  <img src="doc/agenda.jpg" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+
+
+    <div class="w3-quarter" >
+      <div class="w3-container w3-blue w3-padding-16 w3-block" onclick="document.getElementById('poster').style.display='block'">
         <div class="w3-left"><i class="fa fa-trophy w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h3></h3>
         </div>
         <div class="w3-clear"></div>
         <p class=" w3-blue w3-left-align">
-        <h4>Poster & Presentation </h4> </p>
-          <div id="poster" class="w3-hide w3-container">
-            <a href="#"><p>Some text..</p></a>
-            <a href="#"><p>Some text..</p></a>
-          </div>
+        <h4>Poster and Presentation </h4> </p>
 
       </div>
     </div>
-    <div class="w3-quarter" onclick="myFunction('Booth')">
-      <div class="w3-container w3-teal w3-padding-16">
+
+          <div id="poster" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+                <span onclick="document.getElementById('poster').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
+                  <img src="doc/posterPreii.jpg" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+
+
+    <div class="w3-quarter" >
+      <div class="w3-container w3-teal w3-padding-16 w3-block" onclick="document.getElementById('Booth').style.display='block'">
         <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h3></h3>
         </div>
         <div class="w3-clear"></div>
         <p class=" w3-teal w3-left-align"><h4>Exhibition Booth</h4></p>
-          <div id="Booth" class="w3-hide w3-container">
-            <a href="#"><p>Some text..</p></a>
-            <a href="#"><p>Some text..</p></a>
-          </div>
       </div>
     </div>
-    <div class="w3-quarter" onclick="myFunction('Activiy')" >
-      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+
+          <div id="Booth" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+                <span onclick="document.getElementById('Booth').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
+                  <img src="doc/exhibitionBooth.jpg" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+
+
+    <div class="w3-quarter" >
+      <div class="w3-container w3-orange w3-text-white w3-padding-16" onclick="document.getElementById('Activiy').style.display='block'">
         <div class="w3-left"><i class="fa fa-gamepad w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h3></h3>
@@ -119,13 +141,22 @@ body{ background: #F5F5F5;
         <div class="w3-clear"></div>
         <p class="w3-orange w3-text-white w3-left-align">
         <h4>Creative Activiy</h4></p>
-          <div id="Activiy" class="w3-hide w3-container">
-            <a href="#"><p>Some text..</p></a>
-            <a href="#"><p>Some text..</p></a>
-          </div>
       </div>
     </div>
   </div>
+
+          <div id="Activiy" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+                <span onclick="document.getElementById('Activiy').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
+                  <div align="center">
+                    <object type="application/pdf" data="doc/creativeActivity.pdf" style="width:100%; height: 700px" height="" ></object>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -138,13 +169,13 @@ body{ background: #F5F5F5;
             <td><i></i></td>
           </tr>
           <tr>
-            <td><a href="#"><i class="fa fa-bell w3-text-red w3-large"></i></a></td>
-            <td><a href="#">Ice cream stick bridge</a></td>
+            <td><a href="https://goo.gl/forms/DHq2FlgDzvhlKGvQ2"><i class="fa fa-bell w3-text-red w3-large"></i></a></td>
+            <td><a href="https://goo.gl/forms/DHq2FlgDzvhlKGvQ2">The Great Golden Gate</a></td>
             <td><i></i></td>
           </tr>
           <tr>
-            <td><a href="#"><i class="fa fa-car w3-text-yellow w3-large"></i></a></td>
-            <td><a href="#">A-F Car racing</a></td>
+            <td><a href="https://goo.gl/forms/hc2Nx53rrkV7ToNq2"><i class="fa fa-car w3-text-yellow w3-large"></i></a></td>
+            <td><a href="https://goo.gl/forms/hc2Nx53rrkV7ToNq2">A-F Formula-1</a></td>
             <td><i></i></td>
           </tr>
         </table>
@@ -153,30 +184,44 @@ body{ background: #F5F5F5;
         <table class="w3-table w3-striped w3-white">
           <tr>
             <td><a href="#"><i class="fa fa-music w3-text-red w3-large"></i></a></td>
-            <td><a href="#">The mask singer</a></td>
+            <td><a href="#">The Mask Singer...(Comming soon..)</a></td>
             <td><i></i></td>
           </tr>
           <tr>
             <td><a href="#"><i class="fa fa-camera w3-text-blue w3-large"></i></a></td>
-            <td><a href="#">Drone selfile</a></td>
+            <td><a href="#">Drone selfile...(Comming soon...)</a></td>
             <td><i></i></td>
           </tr>
           <tr>
             <td><a href="#"><i class="fa fa-gamepad w3-text-red w3-large"></i></a></td>
-            <td><a href="#">Game online</a></td>
+            <td><a href="#">Game online...(Comming soon...)</a></td>
             <td><i></i></td>
           </tr>
           <tr>
             <td><a href="#"><i class="fa fa-question-circle w3-text-deep-purple w3-large"></i></a></td>
-            <td><a href="#">Q-A online</a></td>
+            <td><a href="#">Q-A online...(Comming soon...)</a></td>
             <td><i></i></td>
           </tr>
+<!--
           <tr>
             <td><a href="#"><i class="fa fa-star w3-text-orange w3-large"></i></a></td>
             <td><a href="#">Lucky draw</a></td>
             <td><i></i></td>
-          </tr>
+          </tr> 
+-->
         </table>
+
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Exhibition Booth Voting</h5>
+              
+
+
+<div class="w3-container w3-center">
+  <a href="https://goo.gl/forms/Rt8w0RCFhBUPyDeA3"><img src="img/qrCodeii.png" class="w3-hover-opacity" style="width:70%; height: 70%; ">
+    <div class="w3-container">
+  </div>
+  <hr>
+</div>
+
       </div>
 
       <div class="w3-twothird">
@@ -186,22 +231,81 @@ body{ background: #F5F5F5;
           <div id="id01" class="w3-modal">
             <div class="w3-modal-content w3-animate-zoom">
               <div class="w3-container">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <p>Some text. Some text. Some text.</p>
-                <p>Some text. Some text. Some text.</p>
+
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright w3-red">&times;</span>
+        <h2 style="text-shadow:1px 1px 0 #444">Contact Us</h2>
+      </header>
+      <div class="w3-container">
+        <table class="w3-table w3-striped w3-white">
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Chaiya (Overall Exhibition)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 3299 8332</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Kongsak (Poster Session)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 1648 2831</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Theerasak (Visitor Information)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 9511 4519</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Panuwat (SE-COMM Area)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 9775 9058</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Sukhon (SE-COMM Area)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 9450 9097</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Jetsada (Facility)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 6040 8868</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Saravut (Creativity #2)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 9761 1028</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Chawalit (Support Poster )</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 1615 6424</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Ruksakul (Concert/Creativity #1)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 6363 1701</i></td>
+            <td><i></i></td>
+          </tr>
+          <tr >
+            <td ><i class="fa fa-user w3-large"></i>&nbsp;:&nbsp;&nbsp; Chaiyan (Creative Activity)</td>
+            <td><i class="fa fa-phone w3-large">&nbsp;:&nbsp;&nbsp;08 1810 3537</i></td>
+            <td><i></i></td>
+          </tr>
+        </table>
+      </div>
               </div>
             </div>
-          </div>
+          </div> 
+
+
 
         <div class="w3-container ">
         <p class="  w3-left-align"><i class="fa fa-map-marker fa-th-large fa-fw w3-margin-right"></i> Map</p>
 
         <!-- Slideshow Indicators -->
         <div class="w3-content" style="max-width:1200px">
-          <img class="mySlides" src="img/1.png" style="width:100%">
-          <img class="mySlides" src="img/2.png" style="width:100%">
-          <img class="mySlides" src="img/3.png" style="width:100%">
-
+          <img class="mySlides" src="doc/visitorInfo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+<!--          <img class="mySlides" src="img/2.png" style="width:100%">
+          <img class="mySlides" src="img/3.png" style="width:100%"> -->
+<!--
           <div class="w3-row-padding w3-section">
             <div class="w3-col s4">
               <img class="demo w3-opacity w3-hover-opacity-off" src="img/1.png" style="width:100%" onclick="currentDiv(1)">
@@ -211,7 +315,8 @@ body{ background: #F5F5F5;
             </div>
             <div class="w3-col s4">
               <img class="demo w3-opacity w3-hover-opacity-off" src="img/3.png" style="width:100%" onclick="currentDiv(3)">
-            </div>
+            </div> 
+-->
           </div>
         </div>
       </div>
@@ -219,7 +324,10 @@ body{ background: #F5F5F5;
       </div>
     </div>
   </div>
-  
+ 
+
+
+
 
 
 
@@ -309,6 +417,22 @@ function myFunction(id) {
 }
 
 </script>
+
+
+<!--img extend-->
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
 
 </body>
 </html>
