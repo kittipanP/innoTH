@@ -12,6 +12,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
+
+<!-- Custom Theme files [Online game]-->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
 header{ background: url(img/contact_.jpg);
@@ -21,6 +28,14 @@ body{ background: #F5F5F5;
         background-size:100% ; } 
 </style>
 
+<STYLE TYPE="TEXT/CSS"><!--
+A:link  {
+text-decoration:none;
+}
+A:visited {
+text-decoration:none;
+}
+//--></STYLE>
 
 <!--Slideshow Indicators-->
 <style>
@@ -79,7 +94,7 @@ body{ background: #F5F5F5;
             <div class="w3-modal-content w3-animate-zoom">
               <div class="w3-container">
                 <span onclick="document.getElementById('Agenda').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-                  <img src="doc/agenda.jpg" style="width:100%">
+                  <img src="doc/agendaii.jpg" style="width:100%">
               </div>
             </div>
           </div>
@@ -125,36 +140,41 @@ body{ background: #F5F5F5;
             <div class="w3-modal-content w3-animate-zoom">
               <div class="w3-container">
                 <span onclick="document.getElementById('Booth').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-                  <img src="doc/exhibitionBooth.jpg" style="width:100%">
+                  <img src="doc/exhibitionBoothii.png" style="width:100%">
               </div>
             </div>
           </div>
 
 
 
-    <div class="w3-quarter" >
-      <div class="w3-container w3-orange w3-text-white w3-padding-16" onclick="document.getElementById('Activiy').style.display='block'">
+    <div class="w3-quarter" ><a href="doc/creativeActivity.pdf" target="_blank">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16" onclick="document.getElementById('Activiy').style.display='block'" >
         <div class="w3-left"><i class="fa fa-gamepad w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h3></h3>
         </div>
         <div class="w3-clear"></div>
         <p class="w3-orange w3-text-white w3-left-align">
-        <h4>Creative Activiy</h4></p>
-      </div>
+        <h4>Creative Activity</h4></p>
+      </div></a>
     </div>
   </div>
-
+<!--
           <div id="Activiy" class="w3-modal">
             <div class="w3-modal-content w3-animate-zoom">
               <div class="w3-container">
                 <span onclick="document.getElementById('Activiy').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-                  <div align="center">
+                  <div align="center" style="width:100%; height: 700px" height="">
+
+                  
                     <object type="application/pdf" data="doc/creativeActivity.pdf" style="width:100%; height: 700px" height="" ></object>
+                  
+
+                    <a href="doc/creativeActivity.pdf" target="_blank">ABC PDF file</a> 
                   </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
 
 
@@ -164,8 +184,8 @@ body{ background: #F5F5F5;
         <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Register</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><a href="#"><i class="fa fa-sign-in w3-text-green w3-large"></i></a></a></td>
-            <td><a href="https://docs.google.com/forms/d/1XY-DGZFs3xN3XE_mS1kuQ6hmVrEFXT6UAwlFV2OoJmo/viewform?edit_requested=true">Join Exhibition</a></a></td>
+            <td><a href="#"><i class="fa fa-sign-in w3-text-green w3-large"></i></a></td>
+            <td><a href="https://docs.google.com/forms/d/1XY-DGZFs3xN3XE_mS1kuQ6hmVrEFXT6UAwlFV2OoJmo/viewform?edit_requested=true">Join Exhibition</a></td>
             <td><i></i></td>
           </tr>
           <tr>
@@ -179,29 +199,111 @@ body{ background: #F5F5F5;
             <td><i></i></td>
           </tr>
         </table>
+<!--
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-red">
+Centered and full-width</button> -->
 
-        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Online Submission</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><a href="#"><i class="fa fa-music w3-text-red w3-large"></i></a></td>
-            <td><a href="#">The Mask Singer...(Comming soon..)</a></td>
-            <td><i></i></td>
+            <td><a href="#"><i class="fa fa-file-image-o w3-text-indigo w3-large"></i></a></td>
+            <td>Your Photo
+              <table class="w3-table w3-white">
+                <tr>
+                  <td><div onclick="myFunction('@PRB')"><i class="fa  fa-qrcode  w3-large"></i></div></td>
+                  <td>
+                    <div onclick="myFunction('@PRB')" class="">Inni-Bazaar@PRB</div>
+
+                    <div id="@PRB" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/_FGiStMYc0"><img src="img/line/@PRB.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+                  <td><div onclick="myFunction('THO')"><i class="fa  fa-qrcode  w3-large"></i></div></td>
+                  <td>
+                    <div onclick="myFunction('THO')" class="">Inni-Bazaar@THO</div>
+
+                    <div id="THO" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/IdnehRNCHt"><img src="img/line/@THO.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+                  <td><div onclick="myFunction('@TPE')"><i class="fa  fa-qrcode  w3-large"></i></div></td>
+                  <td>
+                    <div onclick="myFunction('@TPE')" class="">Inni-Bazaar@TPE</div>
+
+                    <div id="@TPE" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/_FGiStMYc0"><img src="img/line/@TPE.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+                  <td><div onclick="myFunction('@BPI')"><i class="fa  fa-qrcode  w3-large"></i></div></td>
+                  <td>
+                    <div onclick="myFunction('@BPI')" class="">Inni-Bazaar@BPI</div>
+
+                    <div id="@BPI" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/IdVvTi4lx5"><img src="img/line/@BPI.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
+                </tr>
+
+
+
+              </table>
+
+            </td>
           </tr>
+
+
           <tr>
-            <td><a href="#"><i class="fa fa-camera w3-text-blue w3-large"></i></a></td>
-            <td><a href="#">Drone selfile...(Comming soon...)</a></td>
+            <td><div onclick="myFunction('Drone')"><i class="fa fa-camera w3-text-blue w3-large"></i></div></td>
+            <td>
+                    <div onclick="myFunction('Drone')" class="">Drone Selfie</div>
+
+                    <div id="Drone" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/7em0Ki7Xu2"><img src="img/line/@drone_selfie.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
             <td><i></i></td>
           </tr>
+
+
           <tr>
-            <td><a href="#"><i class="fa fa-gamepad w3-text-red w3-large"></i></a></td>
-            <td><a href="#">Game online...(Comming soon...)</a></td>
+            <td><div onclick="myFunction('onlineGame')"><i class="fa fa-gamepad w3-text-red w3-large"></i></div></td>
+            <td>
+                    <div onclick="myFunction('onlineGame')" class="">Online Game</div>
+
+                    <div id="onlineGame" class="w3-hide w3-container w3-center">
+                      <a href="http://line.me/R/ti/g/qpv79AwxKR"><img src="img/line/@online_game.jpg" class="w3-hover-opacity" style="width:100%; height: 100%; "></a>
+                    </div>
+                  </td>
+
             <td><i></i></td>
           </tr>
+
+</div>
+
+
+<!--
           <tr>
             <td><a href="#"><i class="fa fa-question-circle w3-text-deep-purple w3-large"></i></a></td>
             <td><a href="#">Q-A online...(Comming soon...)</a></td>
             <td><i></i></td>
           </tr>
+-->
 <!--
           <tr>
             <td><a href="#"><i class="fa fa-star w3-text-orange w3-large"></i></a></td>
@@ -211,20 +313,224 @@ body{ background: #F5F5F5;
 -->
         </table>
 
+
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i><a href="http://www.qa.wdthjobs.com/">Q-A Online...(Comming soon...)</a></h5>
+
+
+        <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i><a href="#">The Mask Winner...(Comming soon..)</a></h5>
+
         <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Exhibition Booth Voting</h5>
               
 
 
-<div class="w3-container w3-center">
-  <a href="https://goo.gl/forms/Rt8w0RCFhBUPyDeA3"><img src="img/qrCodeii.png" class="w3-hover-opacity" style="width:70%; height: 70%; ">
-    <div class="w3-container">
-  </div>
-  <hr>
-</div>
+            <div class="w3-container w3-center">
+              <a href="https://goo.gl/forms/Rt8w0RCFhBUPyDeA3"><img src="img/qrCodeii.png" class="w3-hover-opacity" style="width:90%; height: 90%; "></a>
+              <hr>
+            </div>
+
+
+
+
+
+      </div>
+      <div class="w3-twothird">
+
+
+<!-- content -->
+   <div class="container">
+     <div class="top-games">
+       <h3><i class="fa fa-gamepad fa-th-large fa-fw w3-margin-right"></i>Online Games</h3>
+       <span></span>
+     </div>
+     <div class="top-game-grids">
+       <ul id="flexiselDemo1">
+         <li>
+           <div class="game-grid">
+              <!--
+              <div class="w3-display-container w3-hover-opacity" style="">
+                <img src="img/game/slither.jpg" class="img-responsive" alt=""/>
+                <div class="w3-display-middle w3-display-hover w3-xlarge">
+                  <button class="w3-button w3-green">John Doe</button>
+                </div>
+              </div> -->
+
+
+                    <div class="w3-card-2 w3-display-container"  style="">
+                        <!--<a href="ui_connect/email_management/Email_Management.php"> --><img src="img/game/slither.jpg" class="img-responsive" alt=""/>
+                              <div class="w3-display-middle w3-display-hover">  
+                                <div class="w3-panel w3-green w3-card-2">
+                                    <a href="http://slither.io/" class = "textdecoration"><p class="w3-text-white"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;PLAY</p></a>
+                                </div>
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://itunes.apple.com/us/app/slither.io/id1091944550?mt=8" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+
+
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://play.google.com/store/apps/details?id=air.com.hypah.io.slither" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-android" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+                            </div>
+                        <!--</a>-->
+
+                                <div class = "w3-container">
+                                  <h4>Slither.io</h4>
+                                </div>
+                    </div>
+
+
+
+           </div> 
+         </li>
+         <li>
+           <div class="game-grid">
+             
+                    <div class="w3-card-2 w3-display-container"  style="">
+                        <!--<a href="ui_connect/email_management/Email_Management.php"> -->
+
+                          <img src="img/game/flappy_bird.jpg" class="img-responsive" alt=""/>
+                              <div class="w3-display-middle w3-display-hover">  
+                                <div class="w3-panel w3-green w3-card-2">
+                                    <a href="http://flappybird.io/" class = "textdecoration"><p class="w3-text-white"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;PLAY</p></a>
+                                </div>
+                                <!--
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;&nbsp;DOWNLOAD</p></a>
+                                </div>
+
+
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-android" aria-hidden="true"></i>&nbsp;&nbsp;DOWNLOAD</p></a>
+                                </div>
+
+                              -->
+                            </div>
+                        <!--</a>-->
+
+                                <div class = "w3-container">
+                                    <h4>Flappy Bird</h4>
+                                </div>
+                    </div>
+
+
+           </div>
+         </li>
+         <li>
+           <div class="game-grid">
+             
+
+                    <div class="w3-card-2 w3-display-container"  style="">
+                        <!--<a href="ui_connect/email_management/Email_Management.php"> -->
+
+                          <img src="img/game/2048.jpg" class="img-responsive" alt=""/>
+
+                              <div class="w3-display-middle w3-display-hover">  
+                                <div class="w3-panel w3-green w3-card-2">
+                                    <a href="http://2048game.com/" class = "textdecoration"><p class="w3-text-white"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;PLAY</p></a>
+                                </div>
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://itunes.apple.com/us/app/2048/id840919914?mt=8" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+
+
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://play.google.com/store/apps/details?id=game2048.b2048game.twozerofoureight2048.game" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-android" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+                            </div>
+                        <!--</a>-->
+
+                                <div class = "w3-container">
+                                  <h4>2048</h4>
+                                </div>
+                    </div>
+
+
+           </div>
+         </li>
+         <li>
+           <div class="game-grid">
+             
+                    <div class="w3-card-2 w3-display-container"  style="">
+                        <!--<a href="ui_connect/email_management/Email_Management.php"> -->
+
+                          <img src="img/game/123ii.jpg" class="img-responsive" alt="" />
+
+                              <div class="w3-display-middle w3-display-hover">  
+                                <!--
+                                <div class="w3-panel w3-green w3-card-2">
+                                    <a href="" class = "textdecoration"><p class="w3-text-white"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;PLAY</p></a>
+                                </div>
+                              -->
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://itunes.apple.com/th/app/1-2-3/id953831664?mt=8" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+
+
+                                    <p>&nbsp;</p>
+                                <div class="w3-panel w3-deep-orange w3-card-4 ">
+                                    <a href="https://play.google.com/store/apps/details?id=pine.game.OneTwoThree" class = "textdecoration" ><p class="w3-text-white"><i class="fa fa-android" aria-hidden="true"></i>&nbsp;&nbsp;GET</p></a>
+                                </div>
+                            </div>
+                        <!--</a>-->
+
+                                <div class = "w3-container">
+                                    <h4>1+2=3</h4>
+                                </div>
+                    </div>
+
+
+
+           </div> 
+         </li>                  
+       </ul>
+       
+       <script type="text/javascript">
+       $(window).load(function() {      
+        $("#flexiselDemo1").flexisel({
+        visibleItems: 4,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,        
+        pauseOnHover:true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+          portrait: { 
+            changePoint:480,
+            visibleItems: 1
+          }, 
+          landscape: { 
+            changePoint:640,
+            visibleItems: 2
+          },
+          tablet: { 
+            changePoint:768,
+            visibleItems: 3
+          }
+        }
+      });
+      });
+      </script>
+      <script type="text/javascript" src="js/jquery.flexisel.js"></script>  
+     </div>
+   </div>
+
+   <br>
+   <hr>
+
+
 
       </div>
 
+
       <div class="w3-twothird">
+
+
         <h5><i class="fa fa-th-large fa-fw w3-margin-right"></i>Visitor Information</h5>
 
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-phone fa-th-large fa-fw w3-margin-right"></i>Contact Us</button>
@@ -290,6 +596,7 @@ body{ background: #F5F5F5;
             <td><i></i></td>
           </tr>
         </table>
+        <br>
       </div>
               </div>
             </div>
@@ -330,10 +637,14 @@ body{ background: #F5F5F5;
 
 
 
+<br>
+<br>
+
+
 
 <!-- Footer -->
-<footer class="w3-container w3-gray w3-padding-16">
-  <h3>Footer</h3>
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><a href="https://goo.gl/forms/2VQGS2dwqWttUYKA3" target="_blank" class="w3-hover-text-green">Thailand Innovation Bazaar 2017 Survey</a></p>
 </footer>
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
@@ -400,7 +711,7 @@ function move() {
         </script>
 
 
-
+<!--
 <script type="text/javascript">
 
 // Accordion
@@ -417,6 +728,19 @@ function myFunction(id) {
 }
 
 </script>
+-->
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 
 
 <!--img extend-->
